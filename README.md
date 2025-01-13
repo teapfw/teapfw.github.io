@@ -18,6 +18,14 @@
 
 </div>
 
+# Custom Documentation
+
+## Build
+
+Run `jgd -r <source-branch>` to build the repo and publish to the `gh-pages` branch.
+
+# Theme Documentation
+
 ## Features
 
 - Dark Theme
