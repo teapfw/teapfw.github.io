@@ -28,6 +28,29 @@ url: ""
 github:
   username: teapfw # change to your GitHub username
 
+scholar:
+  style: assets/bib/ieee_with_url_mod.csl
+  locale: en
+
+  sort_by: year, month
+  order: descending
+
+  group_by: none
+  group_order: ascending
+
+  source: assets/bib
+  bibliography: references
+  bibliography_template: bib
+
+  replace_strings: true
+  join_strings:    true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
+
 # twitter:
 #   username: twitter_username # change to your Twitter username
 
@@ -147,7 +170,16 @@ pwa:
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
-paginate: 10
+pagination:
+  enabled: true
+  debug: true
+  per_page: 10
+  permalink: /posts/:title/
+  limit: 0
+
+# Explicitly turn off the old code
+# paginate: nil
+# paginate_path: nil
 
 # The base URL of your site
 baseurl: ""
