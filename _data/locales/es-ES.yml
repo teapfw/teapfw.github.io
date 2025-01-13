@@ -12,6 +12,8 @@ tabs:
   # format: <filename_without_extension>: <value>
   home: Inicio
   categories: Categorías
+  robotics: Robótica
+  reflections: Reflexiones
   tags: Etiquetas
   archives: Archivo
   about: Acerca de

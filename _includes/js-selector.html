@@ -23,6 +23,8 @@
 {% if page.layout == 'home'
   or page.layout == 'post'
   or page.layout == 'archives'
+  or page.layout == 'robotics'
+  or page.layout == 'reflections'
   or page.layout == 'category'
   or page.layout == 'tag'
 %}
@@ -52,7 +54,7 @@
 {% include jsdelivr-combine.html urls=urls %}
 
 {% case page.layout %}
-  {% when 'home', 'categories', 'post', 'page' %}
+  {% when 'home', 'categories', 'robotics', 'reflections', 'post', 'page' %}
     {% assign js = page.layout %}
   {% when 'archives', 'category', 'tag' %}
     {% assign js = 'misc' %}

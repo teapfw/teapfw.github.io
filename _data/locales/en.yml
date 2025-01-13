@@ -12,6 +12,8 @@ tabs:
   # format: <filename_without_extension>: <value>
   home: Home
   categories: Categories
+  robotics: Robotics
+  reflections: Reflections
   tags: Tags
   archives: Archives
   about: About
