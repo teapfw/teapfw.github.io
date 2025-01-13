@@ -77,6 +77,7 @@ export default [
   build('commons'),
   build('home'),
   build('categories'),
+  build('robotics'),
   build('page'),
   build('post'),
   build('misc'),
