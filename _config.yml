@@ -16,10 +16,10 @@ timezone: America/New_York
 
 title: William Freidank # the main title
 
-tagline: A place to share my musings in engineering, research, and life. # it will display as the subtitle
+tagline: A place to share my musings in engineering, research, and the various corners of life. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A place to share my musings in engineering, research, and life.
+  A place to share my musings in engineering, research, and the various corners of life.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -176,6 +176,8 @@ pagination:
   per_page: 10
   permalink: /posts/:title/
   limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 # Explicitly turn off the old code
 # paginate: nil
