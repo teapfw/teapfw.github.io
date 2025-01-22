@@ -4,7 +4,7 @@
   <id>/</id>
   <title>William Freidank</title>
   <subtitle>A place to share my musings in engineering, research, and the various corners of life.</subtitle>
-  <updated>2025-01-21T20:45:02-05:00</updated>
+  <updated>2025-01-21T20:56:27-05:00</updated>
   <author>
     <name>William Freidank</name>
     <uri>/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Olivia</title>
+    <link href="/posts/olivia/" rel="alternate" type="text/html" title="Olivia" />
+    <published>2025-01-21T19:00:00-05:00</published>
+  
+    <updated>2025-01-21T20:56:19-05:00</updated>
+  
+    <id>/posts/olivia/</id>
+    <content type="text/html" src="/posts/olivia/" />
+    <author>
+      <name>freidank</name>
+    </author>
+
+  
+    
+    <category term="Reflections" />
+    
+  
+
+  <summary>A letter from a friend…
+
+An incredibly beautiful little girl, Olivia, was just born to my cousin. Lying upright in the hospital bed, she was cradling the baby in her arms; I had never seen a woman’s face so blissfully lost in her own world. After a minute, raising her eyes momentarily to let them rest on the horizon, she caught me staring. “Do you want to hold her?” My heart jumped. I had never...</summary>
+
+  </entry>
 
   
   <entry>
