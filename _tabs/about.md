@@ -4,5 +4,8 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+## Arts
+
+Will beauty save the world? If we can be adequately attuned to discover it where it exists, and humble enough to be inspired by it. Photography is like that; an exercise in seeing. I'm happy to share with you <a href="https://williamfreidank.myportfolio.com" target="_blank">some of mine</a>.
+
+<https://williamfreidank.myportfolio.com>
