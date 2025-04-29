@@ -14,7 +14,7 @@
 
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="en" >
+<html lang="en" data-mode="light">
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
@@ -316,14 +316,6 @@
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     
-      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
-        <i class="fas fa-adjust"></i>
-      </button>
-
-      
-        <span class="icon-border"></span>
-      
-    
 
     
       
@@ -382,7 +374,7 @@
       <div class="container d-flex flex-column px-xxl-5">
         <!-- The Top Bar -->
 
-<header id="topbar-wrapper" aria-label="Top Bar">
+<header id="topbar-wrapper" class="flex-shrink-0" aria-label="Top Bar">
   <div
     id="topbar"
     class="d-flex align-items-center justify-content-between px-lg-3 h-100"
@@ -398,7 +390,7 @@
     </nav>
     <!-- endof #breadcrumb -->
 
-    <button type="button" id="sidebar-trigger" class="btn btn-link">
+    <button type="button" id="sidebar-trigger" class="btn btn-link" aria-label="Sidebar">
       <i class="fas fa-bars fa-fw"></i>
     </button>
 
@@ -406,7 +398,7 @@
       William Freidank
     </div>
 
-    <button type="button" id="search-trigger" class="btn btn-link">
+    <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
       <i class="fas fa-search fa-fw"></i>
     </button>
 
@@ -517,6 +509,61 @@
 <div id="post-list" class="flex-grow-1 px-xl-1">
   
     <article class="card-wrapper card">
+      <a href="/posts/transparent_grime_removal/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">Transparent Grime, Glare, & Noise Removal</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>Question: Can we develop an algorithm to separate distant visual features of interest from transparent foreground noise?  Sensors and robust signal processing form one leg of the proverbial Sense-D...</p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1745899200"
+  data-df="ll"
+  
+>
+  Apr 29, 2025
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      Robotics
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
       <a href="/posts/artificial_potential_field_secant/" class="post-preview row g-0 flex-md-row-reverse">
         
 
@@ -582,13 +629,7 @@
             <h1 class="card-title my-2 mt-md-0">Particle Catching</h1>
 
             <div class="card-text content mt-0 mb-3">
-              <p>The challenge involves tracking a target particle and planning a path which brings the player into contact with the target at a particular time.
-
-Investigation
-
-Trivial approach
-
-The trivial soluti...</p>
+              <p>The challenge involves tracking a target particle and planning a path which brings the player into contact with the target at a particular time.  Investigation  Trivial approach  The trivial soluti...</p>
             </div>
 
             <div class="post-meta flex-grow-1 d-flex align-items-end">
@@ -667,6 +708,20 @@ The trivial soluti...</p>
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/artificial_potential_field_secant/">Artificial Potential Fields - The Secant Method</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/transparent_grime_removal/">Transparent Grime, Glare, & Noise Removal</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/olivia/">Olivia</a>
         </li>
       
@@ -675,13 +730,6 @@ The trivial soluti...</p>
         
         <li class="text-truncate lh-lg">
           <a href="/posts/particle_catching/">Particle Catching</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/artificial_potential_field_secant/">Artificial Potential Fields - The Secant Method</a>
         </li>
       
     </ul>
@@ -719,6 +767,25 @@ The trivial soluti...</p>
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -730,6 +797,11 @@ The trivial soluti...</p>
         
         
 
+  
+    
+    
+    
+    
   
     
     
@@ -761,6 +833,9 @@ The trivial soluti...</p>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/apf/">apf</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/computer-vision/">computer vision</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/controls/">controls</a>
@@ -857,6 +932,25 @@ The trivial soluti...</p>
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -868,6 +962,11 @@ The trivial soluti...</p>
         
         
 
+  
+    
+    
+    
+    
   
     
     
@@ -899,6 +998,9 @@ The trivial soluti...</p>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/apf/">apf</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/computer-vision/">computer vision</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/controls/">controls</a>
@@ -974,7 +1076,7 @@ The trivial soluti...</p>
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('search-results'),
       json: '/assets/js/data/search.json',
-      searchResultTemplate: '  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">    <header>      <h2><a href="{url}">{title}</a></h2>      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">        {categories}        {tags}      </div>    </header>    <p>{snippet}</p>  </article>',
+      searchResultTemplate: '  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">    <header>      <h2><a href="{url}">{title}</a></h2>      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">        {categories}        {tags}      </div>    </header>    <p>{content}</p>  </article>',
       noResultsText: '<p class="mt-5">Oops! No results found.</p>',
       templateMiddleware: function(prop, value, template) {
         if (prop === 'categories') {

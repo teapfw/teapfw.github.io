@@ -14,7 +14,7 @@
 
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="en" >
+<html lang="en" data-mode="light">
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
@@ -303,14 +303,6 @@
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     
-      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
-        <i class="fas fa-adjust"></i>
-      </button>
-
-      
-        <span class="icon-border"></span>
-      
-    
 
     
       
@@ -369,7 +361,7 @@
       <div class="container d-flex flex-column px-xxl-5">
         <!-- The Top Bar -->
 
-<header id="topbar-wrapper" aria-label="Top Bar">
+<header id="topbar-wrapper" class="flex-shrink-0" aria-label="Top Bar">
   <div
     id="topbar"
     class="d-flex align-items-center justify-content-between px-lg-3 h-100"
@@ -403,7 +395,7 @@
     </nav>
     <!-- endof #breadcrumb -->
 
-    <button type="button" id="sidebar-trigger" class="btn btn-link">
+    <button type="button" id="sidebar-trigger" class="btn btn-link" aria-label="Sidebar">
       <i class="fas fa-bars fa-fw"></i>
     </button>
 
@@ -411,7 +403,7 @@
       Tag
     </div>
 
-    <button type="button" id="search-trigger" class="btn btn-link">
+    <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
       <i class="fas fa-search fa-fw"></i>
     </button>
 
@@ -448,9 +440,33 @@
   <h1 class="ps-lg-2">
     <i class="fa fa-tag fa-fw text-muted"></i>
     apf
-    <span class="lead text-muted ps-2">1</span>
+    <span class="lead text-muted ps-2">2</span>
   </h1>
   <ul class="content ps-0">
+    
+      <li class="d-flex justify-content-between px-md-3">
+        <a href="/posts/transparent_grime_removal/">Transparent Grime, Glare, & Noise Removal</a>
+        <span class="dash flex-grow-1"></span>
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+    class="text-muted small text-nowrap"
+  
+  data-ts="1745899200"
+  data-df="ll"
+  
+>
+  Apr 29, 2025
+</time>
+
+      </li>
     
       <li class="d-flex justify-content-between px-md-3">
         <a href="/posts/artificial_potential_field_secant/">Artificial Potential Fields - The Secant Method</a>
@@ -511,6 +527,20 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/artificial_potential_field_secant/">Artificial Potential Fields - The Secant Method</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/transparent_grime_removal/">Transparent Grime, Glare, & Noise Removal</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/olivia/">Olivia</a>
         </li>
       
@@ -519,13 +549,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/particle_catching/">Particle Catching</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/artificial_potential_field_secant/">Artificial Potential Fields - The Secant Method</a>
         </li>
       
     </ul>
@@ -563,6 +586,25 @@
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -574,6 +616,11 @@
         
         
 
+  
+    
+    
+    
+    
   
     
     
@@ -605,6 +652,9 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/apf/">apf</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/computer-vision/">computer vision</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/controls/">controls</a>
@@ -701,6 +751,25 @@
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -712,6 +781,11 @@
         
         
 
+  
+    
+    
+    
+    
   
     
     
@@ -743,6 +817,9 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/apf/">apf</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/computer-vision/">computer vision</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/controls/">controls</a>
@@ -818,7 +895,7 @@
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('search-results'),
       json: '/assets/js/data/search.json',
-      searchResultTemplate: '  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">    <header>      <h2><a href="{url}">{title}</a></h2>      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">        {categories}        {tags}      </div>    </header>    <p>{snippet}</p>  </article>',
+      searchResultTemplate: '  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">    <header>      <h2><a href="{url}">{title}</a></h2>      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">        {categories}        {tags}      </div>    </header>    <p>{content}</p>  </article>',
       noResultsText: '<p class="mt-5">Oops! No results found.</p>',
       templateMiddleware: function(prop, value, template) {
         if (prop === 'categories') {

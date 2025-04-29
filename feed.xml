@@ -4,7 +4,7 @@
   <id>/</id>
   <title>William Freidank</title>
   <subtitle>A place to share my musings in engineering, research, and the various corners of life.</subtitle>
-  <updated>2025-01-26T22:03:18-05:00</updated>
+  <updated>2025-04-29T10:10:33-04:00</updated>
   <author>
     <name>William Freidank</name>
     <uri>/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Transparent Grime, Glare, &amp; Noise Removal</title>
+    <link href="/posts/transparent_grime_removal/" rel="alternate" type="text/html" title="Transparent Grime, Glare, &amp;amp; Noise Removal" />
+    <published>2025-04-29T00:00:00-04:00</published>
+  
+    <updated>2025-04-29T00:00:00-04:00</updated>
+  
+    <id>/posts/transparent_grime_removal/</id>
+    <content type="text/html" src="/posts/transparent_grime_removal/" />
+    <author>
+      <name>freidank</name>
+    </author>
+
+  
+    
+    <category term="Robotics" />
+    
+  
+
+  <summary>Question: Can we develop an algorithm to separate distant visual features of interest from transparent foreground noise?  Sensors and robust signal processing form one leg of the proverbial Sense-Decide-Act loop. But as robotocists are well-aware, our sensors rarely receive or provide pristine information. It’s up to us to either improve our sensing capabilities or design post-processing algori...</summary>
+
+  </entry>
 
   
   <entry>
@@ -38,9 +62,7 @@
     
   
 
-  <summary>A letter from a friend…
-
-An incredibly beautiful little girl, Olivia, was just born to my cousin. Lying upright in the hospital bed, she was cradling the baby in her arms; I had never seen a woman’s face so blissfully lost in her own world. After a minute, raising her eyes momentarily to let them rest on the horizon, she caught me staring. “Do you want to hold her?” My heart jumped. I had never...</summary>
+  <summary>A letter from a friend…  An incredibly beautiful little girl, Olivia, was just born to my cousin. Lying upright in the hospital bed, she was cradling the baby in her arms; I had never seen a woman’s face so blissfully lost in her own world. After a minute, raising her eyes momentarily to let them rest on the horizon, she caught me staring. “Do you want to hold her?” My heart jumped. I had never...</summary>
 
   </entry>
 
@@ -50,7 +72,7 @@ An incredibly beautiful little girl, Olivia, was just born to my cousin. Lying u
     <link href="/posts/artificial_potential_field_secant/" rel="alternate" type="text/html" title="Artificial Potential Fields - The Secant Method" />
     <published>2023-02-01T23:00:00-05:00</published>
   
-    <updated>2025-01-12T21:56:30-05:00</updated>
+    <updated>2025-04-29T10:09:48-04:00</updated>
   
     <id>/posts/artificial_potential_field_secant/</id>
     <content type="text/html" src="/posts/artificial_potential_field_secant/" />
@@ -64,10 +86,7 @@ An incredibly beautiful little girl, Olivia, was just born to my cousin. Lying u
     
   
 
-  <summary>Artificial potential fields (APFs) offer an interesting approach to path planning. The use of “fake forces” makes it intuitive to combine the effects of different elements in the planning scene. However, a common a drawback is the creation of local minima, which prevent guaranteed convergence on the target.
-
-Mathematics
-The topographic height or potential of a point is denoted \(\psi (\mathbf{z...</summary>
+  <summary>Artificial potential fields (APFs) offer an interesting approach to path planning. The use of “fake forces” makes it intuitive to combine the effects of different elements in the planning scene. However, a common a drawback is the creation of local minima, which prevent guaranteed convergence on the target.  Mathematics The topographic height or potential of a point is denoted \(\psi (\mathbf{z...</summary>
 
   </entry>
 
@@ -91,17 +110,7 @@ The topographic height or potential of a point is denoted \(\psi (\mathbf{z...</
     
   
 
-  <summary>The challenge involves tracking a target particle and planning a path which brings the player into contact with the target at a particular time.
-
-Investigation
-
-Trivial approach
-
-The trivial solution is to simply command the particle to prosecute the target’s current position, without extrapolating its behavior into the future. We don’t consider this possibility further.
-
-Naive approach
-
-The ne...</summary>
+  <summary>The challenge involves tracking a target particle and planning a path which brings the player into contact with the target at a particular time.  Investigation  Trivial approach  The trivial solution is to simply command the particle to prosecute the target’s current position, without extrapolating its behavior into the future. We don’t consider this possibility further.  Naive approach  The ne...</summary>
 
   </entry>
 
