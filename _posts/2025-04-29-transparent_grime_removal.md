@@ -69,26 +69,30 @@ Incidentally, I found a paper later that operated on a similar if not the same i
 We could conjecture further how we might deal with imperfections in our assumptions. Let's say there is in fact some minor parallax effect in the target signal, and that our anticipated noise disparity is not exactly equal to its true value. We could apply a sort of kernel that averages neighboring columns in an attempt to improve the algorithm's result in the presence of such model distortions.
 
 $$
-^L P_i = \mathcal{S}_i + ^L \mathcal{N}_i
+^L P_i = ^L \mathcal{S}_i + ^L \mathcal{N}_i
 $$
 
 $$
-^R P_i = \mathcal{S}_i + ^R \mathcal{N}_i
+^R P_i = ^R \mathcal{S}_i + ^R \mathcal{N}_i
 $$
 
 $$
-\mathcal{S}_i = \sigma_0 S_i + \frac{1}{2} \sum_{j=1}^{n} \sigma_j (S_{i-j} + S_{i+j})
+^L \mathcal{S}_i = \sigma_0 S_i + \sum_{j=1}^{n} \sigma_j S_{i+j}
 $$
 
 $$
-^L \mathcal{N}_i = \eta_0 N_{i+d} + \frac{1}{2} \sum_{j=1}^{n} \eta_j (N_{i+d-j} + N_{i+d-j})
+^R \mathcal{S}_i = \sigma_0 S_i + \sum_{j=1}^{n} \sigma_j S_{i-j}
 $$
 
 $$
-^R \mathcal{N}_i = \eta_0 N_{i-d} + \frac{1}{2} \sum_{j=1}^{n} \eta_j (N_{i-d-j} + N_{i-d-j})
+^L \mathcal{N}_i = \eta_0 N_{i+d} + \frac{1}{2} \sum_{j=1}^{m} \eta_j (N_{i+d+j} + N_{i+d-j})
 $$
 
-for some kernel width $$n$$, where $$ 1 = \Sigma \sigma_i = \Sigma \eta_i $$.
+$$
+^R \mathcal{N}_i = \eta_0 N_{i-d} + \frac{1}{2} \sum_{j=1}^{m} \eta_j (N_{i-d+j} + N_{i-d-j})
+$$
+
+for some kernel widths $$n$$ and $$m$$, where $$ 1 = \Sigma \sigma_i = \Sigma \eta_i $$. These new equations introduce allowance for disparity in the target signal and variation around the anticipated disparity in the noise signal.
 
 Perhaps the algorithm could be run for different weighting factors $$\sigma$$ and $$\eta$$ in search of optimizing some output metric, such as sharpness of the calculated target signal.
 
