@@ -43,7 +43,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Transparent Grime, Glare, &amp; Noise Removal" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"William Freidank","url":"https://github.com/teapfw/"},"dateModified":"2025-04-29T00:00:00-04:00","datePublished":"2025-04-29T00:00:00-04:00","description":"Question: Can we develop an algorithm to separate distant visual features of interest from transparent foreground noise?","headline":"Transparent Grime, Glare, &amp; Noise Removal","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/transparent_grime_removal/"},"url":"/posts/transparent_grime_removal/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"William Freidank","url":"https://github.com/teapfw/"},"dateModified":"2025-04-29T16:10:44-04:00","datePublished":"2025-04-29T00:00:00-04:00","description":"Question: Can we develop an algorithm to separate distant visual features of interest from transparent foreground noise?","headline":"Transparent Grime, Glare, &amp; Noise Removal","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/transparent_grime_removal/"},"url":"/posts/transparent_grime_removal/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -573,6 +573,29 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1745957444"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Apr 29, 2025
+</time>
+
+        </span>
+      
 
       
 
@@ -618,9 +641,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="702 words"
+  title="734 words"
 >
-  <em>3 min</em> read</span>
+  <em>4 min</em> read</span>
 
         </div>
       </div>
@@ -720,17 +743,19 @@
 
 <p>We could conjecture further how we might deal with imperfections in our assumptions. Let’s say there is in fact some minor parallax effect in the target signal, and that our anticipated noise disparity is not exactly equal to its true value. We could apply a sort of kernel that averages neighboring columns in an attempt to improve the algorithm’s result in the presence of such model distortions.</p>
 
-\[^L P_i = \mathcal{S}_i + ^L \mathcal{N}_i\]
+\[^L P_i = ^L \mathcal{S}_i + ^L \mathcal{N}_i\]
 
-\[^R P_i = \mathcal{S}_i + ^R \mathcal{N}_i\]
+\[^R P_i = ^R \mathcal{S}_i + ^R \mathcal{N}_i\]
 
-\[\mathcal{S}_i = \sigma_0 S_i + \frac{1}{2} \sum_{j=1}^{n} \sigma_j (S_{i-j} + S_{i+j})\]
+\[^L \mathcal{S}_i = \sigma_0 S_i + \sum_{j=1}^{n} \sigma_j S_{i+j}\]
 
-\[^L \mathcal{N}_i = \eta_0 N_{i+d} + \frac{1}{2} \sum_{j=1}^{n} \eta_j (N_{i+d-j} + N_{i+d-j})\]
+\[^R \mathcal{S}_i = \sigma_0 S_i + \sum_{j=1}^{n} \sigma_j S_{i-j}\]
 
-\[^R \mathcal{N}_i = \eta_0 N_{i-d} + \frac{1}{2} \sum_{j=1}^{n} \eta_j (N_{i-d-j} + N_{i-d-j})\]
+\[^L \mathcal{N}_i = \eta_0 N_{i+d} + \frac{1}{2} \sum_{j=1}^{m} \eta_j (N_{i+d+j} + N_{i+d-j})\]
 
-<p>for some kernel width \(n\), where \(1 = \Sigma \sigma_i = \Sigma \eta_i\).</p>
+\[^R \mathcal{N}_i = \eta_0 N_{i-d} + \frac{1}{2} \sum_{j=1}^{m} \eta_j (N_{i-d+j} + N_{i-d-j})\]
+
+<p>for some kernel widths \(n\) and \(m\), where \(1 = \Sigma \sigma_i = \Sigma \eta_i\). These new equations introduce allowance for disparity in the target signal and variation around the anticipated disparity in the noise signal.</p>
 
 <p>Perhaps the algorithm could be run for different weighting factors \(\sigma\) and \(\eta\) in search of optimizing some output metric, such as sharpness of the calculated target signal.</p>
 
@@ -867,14 +892,14 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/artificial_potential_field_secant/">Artificial Potential Fields - The Secant Method</a>
+          <a href="/posts/transparent_grime_removal/">Transparent Grime, Glare, & Noise Removal</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/transparent_grime_removal/">Transparent Grime, Glare, & Noise Removal</a>
+          <a href="/posts/artificial_potential_field_secant/">Artificial Potential Fields - The Secant Method</a>
         </li>
       
         
