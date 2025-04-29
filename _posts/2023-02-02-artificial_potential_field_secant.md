@@ -39,4 +39,4 @@ An identical map with color bars: <br>
 ![APF map using the Secant Method](/assets/img/posts/apf/apf_secant2.gif "APF map using the Secant Method")
 
 # References
-{% bibliography -q @inproceedings %}
+{% bibliography -q @inproceedings --cited %}
