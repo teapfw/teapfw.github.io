@@ -4,7 +4,7 @@
   <id>/</id>
   <title>William Freidank</title>
   <subtitle>A place to share my musings in engineering, research, and the various corners of life.</subtitle>
-  <updated>2025-04-29T16:11:01-04:00</updated>
+  <updated>2025-06-04T22:04:48-04:00</updated>
   <author>
     <name>William Freidank</name>
     <uri>/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>McBaby - Now 50% Off</title>
+    <link href="/posts/mcbaby/" rel="alternate" type="text/html" title="McBaby - Now 50% Off" />
+    <published>2025-06-03T20:00:00-04:00</published>
+  
+    <updated>2025-06-03T20:00:00-04:00</updated>
+  
+    <id>/posts/mcbaby/</id>
+    <content type="text/html" src="/posts/mcbaby/" />
+    <author>
+      <name>freidank</name>
+    </author>
+
+  
+    
+    <category term="Reflections" />
+    
+  
+
+  <summary>I have the great gift of working in my lab with one the most genuine and creatively funny individuals I know. His humor is wholesome and always accompanies his generosity towards us colleagues. His work ethic is sound, his aptitude inspires, and his sincerity wins trust. It’s not just a nice-to-have; any leader understands the critical weight of character and trust for sound team dynamics. This...</summary>
+
+  </entry>
 
   
   <entry>
