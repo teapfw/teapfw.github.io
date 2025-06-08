@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>/</id>
+  <id>https://teapfw.github.io/</id>
   <title>William Freidank</title>
   <subtitle>A place to share my musings in engineering, research, and the various corners of life.</subtitle>
-  <updated>2025-06-07T19:53:15-04:00</updated>
+  <updated>2025-06-07T21:02:29-04:00</updated>
   <author>
     <name>William Freidank</name>
-    <uri>/</uri>
+    <uri>https://teapfw.github.io/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="https://teapfw.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="/"/>
+    href="https://teapfw.github.io/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
   <rights> © 2025 William Freidank </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>Self-love, Shame, and Narcissism</title>
-    <link href="/posts/self_love/" rel="alternate" type="text/html" title="Self-love, Shame, and Narcissism" />
+    <link href="https://teapfw.github.io/posts/self_love/" rel="alternate" type="text/html" title="Self-love, Shame, and Narcissism" />
     <published>2025-06-05T20:00:00-04:00</published>
   
     <updated>2025-06-05T20:00:00-04:00</updated>
   
-    <id>/posts/self_love/</id>
-    <content type="text/html" src="/posts/self_love/" />
+    <id>https://teapfw.github.io/posts/self_love/</id>
+    <content type="text/html" src="https://teapfw.github.io/posts/self_love/" />
     <author>
       <name>freidank</name>
     </author>
@@ -45,13 +45,13 @@
   
   <entry>
     <title>McBaby - Now 50% Off</title>
-    <link href="/posts/mcbaby/" rel="alternate" type="text/html" title="McBaby - Now 50% Off" />
+    <link href="https://teapfw.github.io/posts/mcbaby/" rel="alternate" type="text/html" title="McBaby - Now 50% Off" />
     <published>2025-06-03T20:00:00-04:00</published>
   
     <updated>2025-06-07T09:00:52-04:00</updated>
   
-    <id>/posts/mcbaby/</id>
-    <content type="text/html" src="/posts/mcbaby/" />
+    <id>https://teapfw.github.io/posts/mcbaby/</id>
+    <content type="text/html" src="https://teapfw.github.io/posts/mcbaby/" />
     <author>
       <name>freidank</name>
     </author>
@@ -69,13 +69,13 @@
   
   <entry>
     <title>Transparent Grime, Glare, &amp; Noise Removal</title>
-    <link href="/posts/transparent_grime_removal/" rel="alternate" type="text/html" title="Transparent Grime, Glare, &amp;amp; Noise Removal" />
+    <link href="https://teapfw.github.io/posts/transparent_grime_removal/" rel="alternate" type="text/html" title="Transparent Grime, Glare, &amp;amp; Noise Removal" />
     <published>2025-04-29T00:00:00-04:00</published>
   
     <updated>2025-04-29T16:10:44-04:00</updated>
   
-    <id>/posts/transparent_grime_removal/</id>
-    <content type="text/html" src="/posts/transparent_grime_removal/" />
+    <id>https://teapfw.github.io/posts/transparent_grime_removal/</id>
+    <content type="text/html" src="https://teapfw.github.io/posts/transparent_grime_removal/" />
     <author>
       <name>freidank</name>
     </author>
@@ -93,13 +93,13 @@
   
   <entry>
     <title>Artificial Potential Fields - The Secant Method</title>
-    <link href="/posts/artificial_potential_field_secant/" rel="alternate" type="text/html" title="Artificial Potential Fields - The Secant Method" />
+    <link href="https://teapfw.github.io/posts/artificial_potential_field_secant/" rel="alternate" type="text/html" title="Artificial Potential Fields - The Secant Method" />
     <published>2023-02-01T23:00:00-05:00</published>
   
     <updated>2025-04-29T10:09:48-04:00</updated>
   
-    <id>/posts/artificial_potential_field_secant/</id>
-    <content type="text/html" src="/posts/artificial_potential_field_secant/" />
+    <id>https://teapfw.github.io/posts/artificial_potential_field_secant/</id>
+    <content type="text/html" src="https://teapfw.github.io/posts/artificial_potential_field_secant/" />
     <author>
       <name>freidank</name>
     </author>
@@ -117,13 +117,13 @@
   
   <entry>
     <title>Particle Catching</title>
-    <link href="/posts/particle_catching/" rel="alternate" type="text/html" title="Particle Catching" />
+    <link href="https://teapfw.github.io/posts/particle_catching/" rel="alternate" type="text/html" title="Particle Catching" />
     <published>2022-10-21T00:00:00-04:00</published>
   
     <updated>2025-01-12T21:56:30-05:00</updated>
   
-    <id>/posts/particle_catching/</id>
-    <content type="text/html" src="/posts/particle_catching/" />
+    <id>https://teapfw.github.io/posts/particle_catching/</id>
+    <content type="text/html" src="https://teapfw.github.io/posts/particle_catching/" />
     <author>
       <name>freidank</name>
     </author>
