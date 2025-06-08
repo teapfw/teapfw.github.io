@@ -22,7 +22,9 @@
 
 ## Build
 
-Run `jgd -r <source-branch>` to build the repo and publish to the `gh-pages` branch.
+~~Run `jgd -r <source-branch>` to build the repo and publish to the `gh-pages` branch.~~
+
+Run `JEKYLL_ENV=production bundle exec jekyll b` in this repo. Make a second clone of this repo and checkout the `gh-pages` branch. Copy the contents of the `_site` folder from the first repo into the secondary clone. Finally commit and push.
 
 # Theme Documentation
 
