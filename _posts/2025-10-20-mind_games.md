@@ -2,7 +2,7 @@
 title: The Game of the Mind
 author: freidank
 date: 2025-10-20 00:00:00 +0000
-categories: [Random]
+categories: [Reflections]
 tags: []
 image:
     path: /assets/img/posts/mind/gaudi.jpg
