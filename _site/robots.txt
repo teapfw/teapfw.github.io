@@ -1,5 +1,0 @@
-User-agent: *
-
-Disallow: /norobots/
-
-Sitemap: https://teapfw.github.io/sitemap.xml
